@@ -1,15 +1,15 @@
 {% set name = "pyramid" %}
-{% set version = "1.10.1" %}
+{% set version = "1.10.5" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
   # when updating to 2.0, make sure to add "python >=3.4" to "host" and "run" sections
   # because 2.0 no longer supports Python 2
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 37c3e1c9eae72817e0365e2a38143543aee8b75240701fa5cb3a1be86c01a1c0
+  sha256: fe1bd1140e6b79fe07f0053981d49be2dc66656cc8b481dd7ffcaa872fc25467
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ build:
     - ptweens=pyramid.scripts.ptweens:main
     - prequest=pyramid.scripts.prequest:main
     - pdistreport=pyramid.scripts.pdistreport:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
