@@ -31,7 +31,7 @@ requirements:
     - python
     - setuptools
   run:
-    - hupper
+    - hupper >=1.5
     - plaster
     - plaster_pastedeploy
     - python
