@@ -118,6 +118,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ChrisBarker-NOAA](https://github.com/ChrisBarker-NOAA/)
 * [@kfasolin](https://github.com/kfasolin/)
 * [@lincrosenbach](https://github.com/lincrosenbach/)
 
