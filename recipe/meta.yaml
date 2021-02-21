@@ -28,13 +28,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
   run:
     - hupper >=1.5
     - plaster
     - plaster_pastedeploy
-    - python
+    - python >=2.7
     - translationstring >=0.4
     - venusian >=1.0
     - webob >=1.8.3
