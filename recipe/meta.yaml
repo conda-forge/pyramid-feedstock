@@ -4,8 +4,6 @@
 package:
   name: {{ name|lower }}
   version: {{ version }}
-  # when updating to 2.0, make sure to add "python >=3.4" to "host" and "run" sections
-  # because 2.0 no longer supports Python 2
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
@@ -15,7 +13,6 @@ build:
   noarch: python
   number: 0
   entry_points:
-    - pcreate=pyramid.scripts.pcreate:main
     - pserve=pyramid.scripts.pserve:main
     - pshell=pyramid.scripts.pshell:main
     - proutes=pyramid.scripts.proutes:main
@@ -27,14 +24,14 @@ build:
 
 requirements:
   host:
+    - python >=3.6
     - pip
-    - python >=2.7
     - setuptools
   run:
+    - python >=3.6
     - hupper >=1.5
     - plaster
     - plaster_pastedeploy
-    - python >=2.7
     - translationstring >=0.4
     - venusian >=1.0
     - webob >=1.8.3
@@ -45,10 +42,8 @@ test:
   imports:
     - pyramid
     - pyramid.config
-#    - pyramid.scaffolds
     - pyramid.scripts
   commands:
-    - pcreate --help
     - pserve --help
     - pshell --help
     - proutes --help
@@ -56,10 +51,6 @@ test:
     - ptweens --help
     - prequest --help
     - pdistreport --help
-  requires:
-    - webtest >=1.3.1
-    # Dependency not required for running test imports and commands
-    # - zope.component >=4.0
 
 about:
   home: https://trypyramid.com
@@ -75,3 +66,4 @@ extra:
     - lincrosenbach
     - kfasolin
     - ChrisBarker-NOAA
+
