@@ -45,7 +45,7 @@ test:
   imports:
     - pyramid
     - pyramid.config
-    - pyramid.scaffolds
+#    - pyramid.scaffolds
     - pyramid.scripts
   commands:
     - pcreate --help
