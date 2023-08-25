@@ -1,11 +1,11 @@
-About pyramid
-=============
+About pyramid-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyramid-feedstock/blob/main/LICENSE.txt)
 
 Home: https://trypyramid.com
 
 Package license: LicenseRef-Pylons
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyramid-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Pyramid Web Framework, a Pylons project
 
