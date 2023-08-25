@@ -1,5 +1,5 @@
 {% set name = "pyramid" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fabfd745039e26ad5b0915fc396e8725c0f8a3d17b941f9611ecd1ed76cfe7da
+  sha256: 372138a738e4216535cc76dcce6eddd5a1aaca95130f2354fb834264c06f18de
 
 build:
   noarch: python
