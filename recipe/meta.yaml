@@ -29,7 +29,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - setuptools <81
+    - setuptools <82
     - hupper >=1.5
     - plaster
     - plaster_pastedeploy
